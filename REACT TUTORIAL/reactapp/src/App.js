@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import User from "./components/User";
+import Users from "./components/Users";
 
-function App() {
-  return (
-    <div className="container">
-      <Navbar />
-      <hr />
-      <User name="İrem Durmuş" department="Yazılım" salary="10000" />
-
-      <User name="Ayşe Yılmaz" salary="7500" department="Bilişim" />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+        <Navbar title="User App" />
+        <hr />
+        <Users />
+      </div>
+    );
+  }
 }
 
 export default App;
